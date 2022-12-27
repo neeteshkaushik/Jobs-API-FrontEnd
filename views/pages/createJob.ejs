@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('../partials/head'); %>
+  </head>
+  <body class="container">
+    <header><%- include('../partials/header'); %></header>
+
+    <main>
+      <form>
+        <label for="company">Company</label>
+        <input
+          type="text"
+          name="company"
+          id="company"
+          placeholder="Enter Company name"
+        />
+        <label for="position">Position</label>
+        <input
+          type="text"
+          name="position"
+          id="position"
+          placeholder="Enter position"
+        />
+        <label for="status">Status</label>
+        <select id="status">
+          <option value="pending">pending</option>
+          <option value="selected">selected</option>
+          <option value="rejected">rejected</option>
+          <option value="interview">interview</option>
+        </select>
+        <button id="createJob">Sumbit</button>
+      </form>
+    </main>
+
+    <footer><%- include('../partials/footer'); %></footer>
+  </body>
+  <script src="../../controllers/createJob.js"></script>
+</html>

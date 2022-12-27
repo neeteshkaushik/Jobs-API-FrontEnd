@@ -37,10 +37,11 @@ const createJobCB = async (e) => {
       console.log(d);
       sessionStorage.setItem("token", d.token);
       //   sessionStorage.setItem("user", d.user);
-      window.location = `/userHome/${d.token}`;
+      window.location = `/userHome`;
     } else {
       //window.location = "/";
       console.log(res.json());
+      window.location = "/error";
     }
   } catch (error) {
     console.log("Error " + error);

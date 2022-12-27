@@ -1,9 +1,9 @@
 console.log("index js");
 
 var token = sessionStorage.getItem("token");
-const userHomeLink = document.getElementById("user-home-link");
-const loginLink = document.getElementById("login");
-const registerLink = document.getElementById("register");
+var userHomeLink = document.getElementById("user-home-link");
+var loginLink = document.getElementById("login");
+var registerLink = document.getElementById("register");
 // console.log(token);
 if (!token) {
   userHomeLink.style.display = "none";

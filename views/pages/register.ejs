@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('../partials/head'); %>
+  </head>
+  <body class="container">
+    <header><%- include('../partials/header'); %></header>
+
+    <main>
+      <form>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="Enter name" />
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Enter email" />
+        <label for="password">Password</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Enter Password"
+        />
+        <button id="registerBtn">Sumbit</button>
+      </form>
+    </main>
+
+    <footer><%- include('../partials/footer'); %></footer>
+  </body>
+  <script src="../../controllers/register.js"></script>
+</html>
